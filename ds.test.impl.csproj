@@ -33,6 +33,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,10 +42,40 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Plugins\DividePlugin.cs" />
+    <Compile Include="Plugins\MultiplyPlugin.cs" />
+    <Compile Include="Plugins\SubtractPlugin.cs" />
+    <Compile Include="Plugins\AddPlugin.cs" />
+    <Compile Include="IPlugin.cs" />
+    <Compile Include="Plugins\Plugin.cs" />
+    <Compile Include="Plugins.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="README.md" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add_plugin_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\subtract_plugin_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\multiply_plugin_image.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\divide_plugin_image.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
