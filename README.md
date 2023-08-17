@@ -16,9 +16,9 @@ public interface IPlugin
 ```csharp
 interface PluginFactory
 {
-int PluginsCount { get; }
-string[] GetPluginNames { get; }
-IPlugin GetPlugin (string pluginName);
+	int PluginsCount { get; }
+	string[] GetPluginNames { get; }
+	IPlugin GetPlugin (string pluginName);
 }
 ```
 Часть реализаций интерфейса **IPlugin** должна быть унаследована от закрытого абстрактного класса<br>
